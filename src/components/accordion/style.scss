@@ -1,0 +1,59 @@
+.afx-accord-header {
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+  padding: 12px 12px;
+  z-index: 10;
+  background-color: rgb(240, 240, 240);
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(102, 176, 250);
+    box-shadow:
+      8px 5px 5px rgba(43, 42, 42, 0.281),
+      inset -2px -2px 7.5px rgba(179, 178, 178, 0.911);
+  }
+
+  > .icon-arrow-rotate {
+    transition: 0.285s ease-in-out;
+    transform: rotate(90deg);
+  }
+
+  &[data-visible='1'] {
+    > .icon-arrow-rotate {
+      transform: rotate(0deg);
+    }
+  }
+
+  &[data-disabled='1'] {
+    cursor: no-drop;
+    background-color: rgb(202, 202, 202);
+  }
+
+  &[data-active='1'] {
+    background-color: rgb(102, 176, 250);
+  }
+}
+
+.afx-accord-items {
+  border-radius: 3px;
+  background-color: rgb(202, 202, 202);
+  padding: 16px 12px;
+}
+
+.afx-accord-content {
+  transition: 0.35s ease-in-out;
+  position: relative;
+  max-height: 0;
+  overflow-y: hidden;
+  padding: 8px 0px 0px 1.5em;
+  z-index: 5;
+
+  &[data-visible='1'] {
+    padding: 12px 8px 12px 1.5em;
+    max-height: fit-content;
+  }
+}

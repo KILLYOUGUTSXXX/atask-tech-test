@@ -1,0 +1,20 @@
+.afx-button {
+  transition: 0.475s ease;
+  background-color: rgb(68, 158, 238);
+  color: rgb(233, 233, 233);
+  border-radius: 2px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+
+  &.afx-button:hover {
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow:
+      8px 5px 5px rgba(43, 42, 42, 0.281),
+      inset -2px -2px 7.5px rgba(179, 178, 178, 0.911);
+  }
+}

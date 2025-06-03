@@ -1,0 +1,45 @@
+{
+  "name": "atask",
+  "version": "0.1.0",
+  "private": true,
+  "author": {
+    "name": "KILLYOUGUTSXXX",
+    "email": "lord.aidilf@gmail.com",
+    "url": "https://aidil.killyourguts-projects.online"
+  },
+  "repository": {
+    "type": "TEMPLATE",
+    "url": "https://github.com/KILLYOUGUTSXXX/next-example-template"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/nextjs-registry": "^1.0.2",
+    "axios": "^1.8.3",
+    "next": "15.2.2",
+    "postcss": "^8.5.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sass": "^1.85.1",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.17.57",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
