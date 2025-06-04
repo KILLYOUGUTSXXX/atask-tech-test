@@ -54,6 +54,7 @@ export default function GithubView(_: PropsWithChildren) {
     <div className="flex flex-col gap-y-4">
       <div>
         <InputText
+          testId="search-input"
           disabled={LOADING_REPOS || LOADING_USERS}
           onPresssEnter={() => setFinalSearch(qSearch)}
           onChange={ev => setQSearch(ev.target.value)}
@@ -61,6 +62,7 @@ export default function GithubView(_: PropsWithChildren) {
       </div>
       <div>
         <Button
+          testId="search-button"
           disabled={LOADING_REPOS || LOADING_USERS}
           onClick={() => setFinalSearch(qSearch)}
         >
@@ -74,8 +76,9 @@ export default function GithubView(_: PropsWithChildren) {
       </div>
       {!LOADING_USERS ? (
         <div className="flex-col gap-y-2 overflow-y-auto">
-          {state.listUsers.map(a => (
+          {state.listUsers.map((a, index) => (
             <Accordion
+              testId={`list-user`}
               open={a.id === state.currentUser?.id}
               key={a.id}
               disabled={LOADING_REPOS}
@@ -89,7 +92,10 @@ export default function GithubView(_: PropsWithChildren) {
         </div>
       ) : (
         <div className="w-full flex flex-col text-center justify-center gap-y-4">
-          <LoadingOutlined className="text-[72px] !text-blue-400" />
+          <LoadingOutlined
+            className="text-[72px] !text-blue-400"
+            data-testid="loading-user"
+          />
           <p className="font-semibold text-blue-400">Loading ...</p>
         </div>
       )}

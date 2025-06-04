@@ -5,6 +5,8 @@ import DownOutlinedIcon from '@ant-design/icons/lib/icons/DownOutlined'
 import { LoadingOutlined } from '@ant-design/icons'
 
 export interface IAccordion<T = { [P in string]: any }> {
+  id?: string
+  className?: string
   title: string
   open?: boolean
   items: Array<T>
@@ -12,6 +14,9 @@ export interface IAccordion<T = { [P in string]: any }> {
   disabled?: boolean
   renderItem: (record: T, index: number) => React.ReactNode
   onChange?: (open: boolean) => void
+
+  // Test attribute
+  testId?: string
 }
 
 export default function Accordion<T>(props: IAccordion<T>) {
@@ -19,7 +24,7 @@ export default function Accordion<T>(props: IAccordion<T>) {
   const isOpen = typeof props.open === 'boolean' ? props.open : !!open
 
   return (
-    <div>
+    <div id={props.id} className={props.className} data-testid={props.testId}>
       <div>
         <a
           onClick={() =>
