@@ -3,8 +3,8 @@ import './globals.css'
 import { lazy } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Qubic Test- Aidil Febrian',
-  description: 'technical test'
+  title: 'Atask Test- Aidil Febrian',
+  description: 'Technical Test'
 }
 
 const MainLayout = lazy(() => import('@afx/views/main/index.layout'))
