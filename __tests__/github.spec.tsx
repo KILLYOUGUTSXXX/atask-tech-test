@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import GithubView from '@afx/views/github/index.layout'
 
-describe('haiiii', () => {
+describe('Testing', () => {
   it('Check existing search input', async () => {
     render(<GithubView />)
 
