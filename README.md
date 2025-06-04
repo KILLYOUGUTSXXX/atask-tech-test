@@ -1,4 +1,9 @@
-### Installation
+# Clone Project
+```bash
+git clone https://github.com/KILLYOUGUTSXXX/atask-tech-test
+```
+---
+## Installation
 
 ####  1. Install package
 ```bash
@@ -16,7 +21,44 @@
 ```
 
 ####  4. Open application
-- [Localhost:3000](http://localhost:3000)
+- [localhost:3000/github](http://localhost:3000/github)
 
-###  Deployment Application
-- [https://atask-afx.vercel.app/](https://atask-afx.vercel.app/)
+
+---
+## Run Testing
+
+####  1. Switch Branch
+```bash
+  git pull checkout -B SIT
+```
+
+####  2. re-Pull Repository
+```bash
+  git pull origin SIT
+```
+
+####  3. install the addition packages
+```bash
+  npm install
+```
+
+####  4. run the test
+```bash
+  npm run test
+```
+
+#  Deployment Application
+- [https://atask-afx.vercel.app/github](https://atask-afx.vercel.app/github)
+
+
+#  
+
+## Authors
+
+- [@KILLYOUGUTSXXX](https://www.github.com/KILLYOUGUTSXXX)
+
+
+## Source
+
+The code pattern was built by @KILLYOUGUTS : https://github.com/KILLYOUGUTSXXX/next-example-template
+
